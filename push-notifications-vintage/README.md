@@ -17,4 +17,4 @@ Run the server
 Run the client
 ```npm run o yarn run client:start```
 ## Result
-![Push notification][https://firebasestorage.googleapis.com/v0/b/dezkacv.appspot.com/o/push%20notification.png?alt=media&token=4d285d10-143a-4416-890c-e3fccf8a224d]
+![Push notification](https://firebasestorage.googleapis.com/v0/b/dezkacv.appspot.com/o/push%20notification.png?alt=media&token=4d285d10-143a-4416-890c-e3fccf8a224d)
