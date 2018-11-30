@@ -36,9 +36,7 @@ function saveSubscription (subscription) {
   console.log(subscription)
   return sendSubscriptionToBackEnd(subscription)
     .then(validateResponse)
-    .then(function (responseData) {
-      console.log(responseData)
-    })
+    .then(console.log)
     .catch(console.error)
 }
 
@@ -60,6 +58,7 @@ const manager = (function (urlServiceWorker) {
   return {
     registerServiceWorker: () =>
       navigator.serviceWorker.register(urlServiceWorker)
+        .then(() => navigator.serviceWorker.ready)
         .then(setRegister),
     getRegistration: () => registration
   }
